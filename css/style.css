@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Circe Regular';
+  src: url("../fonts/Circe/Circe-Regular.eot");
+  src: url("../fonts/Circe/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Regular.woff") format("woff"), url("../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe Bold';
+  src: url("../fonts/Circe/Circe-Bold.eot");
+  src: url("../fonts/Circe/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Bold.woff") format("woff"), url("../fonts/Circe/Circe-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-size: em(16);
+  font-family: Circe, sans-serif;
+  background-color: #fbebea; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.btn {
+  text-decoration: none;
+  display: block;
+  border: none;
+  box-shadow: none;
+  color: inherit;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  width: 280px;
+  outline: 1px dashed; }
+  @media (max-width: 767px) {
+    .container {
+      outline-color: red; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px;
+      outline-color: yellow; } }
+  @media (min-width: 1150px) {
+    .container {
+      width: 1050px;
+      outline-color: green; } }
