@@ -1,0 +1,28 @@
+{
+  "name": "cakes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ambrance/Cakes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ambrance/Cakes/issues"
+  },
+  "homepage": "https://github.com/Ambrance/Cakes#readme",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "latest",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "latest",
+    "run-sequence": "latest"
+  },
+  "description": ""
+}

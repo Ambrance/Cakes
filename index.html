@@ -1,34 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cakes</title>
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<header class="page-header">
-<div class="container">
-<div class="logo"><span class="logo__label">Cakes</span></div>
-<nav class="main-nav">
-	<ul>
-		<li class="main-nav__item"><a href="#" class="main-nav__link">Наши торты</a></li>
-		<li class="main-nav__item"><a href="#" class="main-nav__link">Индивидуальный заказ</a></li>
-		<li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-		<li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
-		<li class="main-nav__item"><a href="#" class="main-nav__link">Как заказать</a></li>
-		<li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
-	</ul>
-</nav>
-</div>
-</header>
-<main></main>
-<footer class="page-footer"></footer>
+    <header class="page-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo logo--header"><span class="logo__label">Cakes</span></div>
+                <nav class="main-nav main-nav--closed main-nav--header">
+                    <button class="main-nav__target">Открыть меню</button>
+                    <ul>
+                        <li class="main-nav__item main-nav__item--row"><a href="#" class="main-nav__link main-nav__link--hd">Наши торты</a></li>
+                        <li class="main-nav__item main-nav__item--row"><a href="#" class="main-nav__link link main-nav__link--hd">Индивидуальный заказ</a></li>
+                        <li class="main-nav__item main-nav__item--row"><a href="#" class="main-nav__link link main-nav__link--hd">Отзывы</a></li>
+                        <li class="main-nav__item main-nav__item--row"><a href="#" class="main-nav__link link main-nav__link--hd">О нас</a></li>
+                        <li class="main-nav__item main-nav__item--row"><a href="#" class="main-nav__link link main-nav__link--hd">Как заказать</a></li>
+                        <li class="main-nav__item main-nav__item--row"><a href="#" class="main-nav__link link main-nav__link--hd">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href='tel:+79068999296' class="contact-tel contact-tel--header">+7 906 899 92 96</a>
+            </div>
+        </div>
+        <div class="header-btm">
+            <div class="container">
+                <h2 class="header-btm__title">Торты<br> на заказ</h2>
+                <p class="handwriting-subtitle header-btm__subtitle">Ручная работа</p>
+                <ul class="features-list">
+                    <li class="features-list__item features-list__item--natural">
+                        <p class="features-list__desc">Натуральные ингредиенты</p>
+                    </li>
+                    <li class="features-list__item features-list__item--gift">
+                        <p class="features-list__desc">Доставка бесплатно при заказе от 2000 рублей*</p>
+                    </li>
+                </ul>
+                <a href="#" class="btn choose-cake-btn">Выбрать торт</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="assortment">
+            <div class="container">
+                <h2 class="section-title assortment__title">Наши торты</h2>
+                <div class="assortment__list">
+                    <div class="assortment__row">
+                        <div class="assortment__wrap assortment__wrap--large">
+                            <article class="assortment-item assortment-item--classic assortment-item--large">
+                                <h3 class="assortment-item__title"><a href="#">Классические</a></h3>
+                                <span class="assortment-item__amt">24 вида</span>
+                                <a href="#" class="href assortment-item__more">Смотреть</a>
+                            </article>
+                        </div>
+                        <div class="assortment__wrap assortment__wrap--small">
+                            <article class="assortment-item assortment-item--mousse">
+                                <h3 class="assortment-item__title"><a href="#">Муссовые</a></h3>
+                                <span class="assortment-item__amt">12 видов</span>
+                                <a href="#" class="href assortment-item__more">Смотреть</a>
+                            </article>
+                            <article class="assortment-item assortment-item--wedding">
+                                <h3 class="assortment-item__title"><a href="#">Свадебные</a></h3>
+                                <span class="assortment-item__amt">20 видов</span>
+                                <a href="#" class="href assortment-item__more">Смотреть</a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="assortment__row">
+                        <div class="assortment__wrap assortment__wrap--small">
+                            <article class="assortment-item assortment-item--man">
+                                <h3 class="assortment-item__title"><a href="#">Мужчинам</a></h3>
+                                <span class="assortment-item__amt">12 видов</span>
+                                <a href="#" class="href assortment-item__more">Смотреть</a>
+                            </article>
+                            <article class="assortment-item assortment-item--woman">
+                                <h3 class="assortment-item__title"><a href="#">Женщинам</a></h3>
+                                <span class="assortment-item__amt">16 видов</span>
+                                <a href="#" class="href assortment-item__more">Смотреть</a>
+                            </article>
+                        </div>
+                        <div class="assortment__wrap assortment__wrap--large">
+                            <article class="assortment-item assortment-item--kids assortment-item--large">
+                                <h3 class="assortment-item__title"><a href="#">Детские</a></h3>
+                                <span class="assortment-item__amt">18 видов</span>
+                                <a href="#" class="assortment-item__more">Смотреть</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="personal-order">
+            <div class="container">
+                <h2 class="section-title">Индивидуальный заказ</h2>
+                <p class="handwriting-subtitle">Соберите торт в 3 шага</p>
+                <div class="order-steps">
+                    <div class="order-step">
+                        <h4 class="order-step__heading">
+				<span class="order-step__num">01</span>
+				<p class="order-step__desc">Выберите начинку</p>
+			</h4>
+                        <div class="choose-panel"></div>
+                    </div>
+                    <div class="order-step">
+                        <h4 class="order-step__heading">
+				<span class="order-step__num">02</span>
+				<p class="order-step__desc">Размер</p>
+			</h4>
+                        <div class="choose-panel"></div>
+                    </div>
+                    <div class="order-step">
+                        <h4 class="order-step__heading">
+				<span class="order-step__num">03</span>
+				<p class="order-step__desc">Оформление</p>
+			</h4>
+                        <div class="choose-panel"></div>
+                    </div>
+                </div>
+                <h3 class="section-title">Ваш выбор</h3>
+                <form action="" class="order-form">
+                    <div class="order-form-item">
+                        <label for="" class="order-form-item__label">Начинка</label>
+                        <input type="text" class="order-form-item__choose">
+                    </div>
+                    <div class="order-form-item">
+                        <label for="" class="order-form-item__label">Размер</label>
+                        <input type="text" class="order-form-item__choose">
+                    </div>
+                    <div class="order-form-item">
+                        <label for="" class="order-form-item__label">Оформление</label>
+                        <input type="text" class="order-form-item__choose">
+                    </div>
+                    <button type="submit" class="btn order-form__btn">Заказать торт</button>
+                </form>
+            </div>
+        </section>
+        <section class="comments"></section>
+        <section class="about-us"></section>
+        <section class="features-sec"></section>
+        <section class="care-about"></section>
+        <section class="how-to">
+            <h2 class="section-title">Как заказать</h2>
+            <ul class="how-to-info">
+                <li class="how-to-item">
+                    <h4 class="how-to-item__heading">Срок заказа</h4>
+                    <p class="how-to-item__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать за неделю.</p>
+                </li>
+                <li class="how-to-item">
+                    <h4 class="how-to-item__heading">Доставка по городу</h4>
+                    <p class="how-to-item__text">Доставка в предеалх города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
+                </li>
+                <li class="how-to-item">
+                    <h4 class="how-to-item__heading">Доставка за городом</h4>
+                    <p class="how-to-item__text">Доставка за пределами города рассчитывается индивидуально.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <p class="handwriting-subtitle">Остались вопросы?</p>
+                <p class="contacts__offer">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+                <form action="" class="question-form">
+                    <input type="text" class="contacts-form__item" placeholder="Ваше имя">
+                    <input type="text" class="contacts-form__item" placeholder="Email адрес">
+                    <input type="text" class="contacts-form__item" placeholder="Ваш вопрос">
+                    <button type="submit" class="btn contacts-form__btn">Отправить</button>
+                </form>
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">Или позвоните по телефону: <a href="tel:+79068999296">+7 906 899 92 96</a></li>
+                    <li class="contacts-list__item">Наша почта : <a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></li>
+                    <li class="contacts-list__item">Мы в соц. сетях:
+                        <div class="social social--contacts"><a href="#" class="social__btn social__btn--ins"></a><a href="#" class="social__btn social__btn--vk"></a></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="logo logo--footer"><span class="logo__label">Cakes</span></div>
+            <nav class="main-nav main-nav--footer">
+                <ul>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Наши торты</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Индивидуальный заказ</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Как заказать</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href='tel:+79068999296' class="contact-tel contact-tel--footer">+7 906 899 92 96</a>
+            <div class="social social--footer"><a href="#" class="social__btn social__btn--ins"></a><a href="#" class="social__btn social__btn--vk"></a></div>
+            <div class="copyright">
+                <p class="copyright__data">&copy 2018 Cakes</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
