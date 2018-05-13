@@ -209,8 +209,8 @@
         </section>
         <section class="how-to">
             <div class="container">
-                <h2 class="section-title">Как заказать</h2>
-                <ul class="how-to-info">
+                <h2 class="section-title how-to__title">Как заказать</h2>
+                <ul class="how-to__info">
                     <li class="how-to-item">
                         <h4 class="how-to-item__heading">Срок заказа</h4>
                         <p class="how-to-item__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать за неделю.</p>
@@ -235,13 +235,13 @@
                         <p class="contacts__offer">Заполните форму ниже и наш кондитер свяжется с Вами</p>
                         <form action="#" class="question-form">
                             <div class="question-form__item">
-                                <input type="text" class="question-form__input" placeholder="Ваше имя">
+                                <input type="text" name="name" class="question-form__input" placeholder="Ваше имя">
                             </div>
                             <div class="question-form__item">
-                                <input type="text" class="question-form__input" placeholder="Email адрес">
+                                <input type="text" name="email" class="question-form__input" placeholder="Email адрес">
                             </div>
                             <div class="question-form__item">
-                                <textarea class="question-form__input question-form__input--msg" placeholder="Ваш вопрос"></textarea>
+                                <textarea class="question-form__input question-form__input--msg" name="msg" placeholder="Ваш вопрос"></textarea>
                             </div>
                             <button type="submit" class="btn question-form__btn">Отправить</button>
                         </form>
