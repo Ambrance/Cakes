@@ -21,7 +21,7 @@ var gulp = require('gulp'),
       autoprefixer({browsers: [
         "last 2 versions"
       ]})
-    ])) 
+    ]))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({

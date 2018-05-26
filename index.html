@@ -144,19 +144,32 @@
         </section>
         <section class="comments">
             <div class="container">
-                <h2 class="section-title">Отзывы</h2>
-                <div class="comments-box">
+                <h2 class="section-title comments__title">Отзывы</h2>
+                <div class="comments__box">
                     <div class="comments-item">
                         <div class="comments-item__avatar">
-                            <img src="" alt="" class="comments-item__img">
+                            <picture>
+                                <source srcset="img/user-avatar-desktop.png" media="(min-width: 1240px)">
+                                <source srcset="img/user-avatar-tablet.png" media="(min-width: 768px)">
+                                <source srcset="img/user-avatar.png">
+                                <img src="img/user-avatar.png" alt="user" class="comments-item__img">
+                            </picture>
                         </div>
                         <div class="comments-item__content">
-                            <p class="comments-item__person"><span class="comments-item__name">Мария</span><span class="comments-item__person-data">юрист, 33 года</span></p>
+                            <p class="comments-item__person"><span class="comments-item__name">Мария </span><span class="comments-item__person-data">юрист, 33 года</span></p>
                             <p class="comments-item__text">Заказывали торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать только у вас для наших семейных праздников:) <a href="#" class="comments-item__more">Развернуть</a></p>
+                            <div class="counter counter--comments"><span class="counter__current">1</span>/<span class="counter__all">26</span></div>
                         </div>
                     </div>
-                    <div class="counter counter--comments"><span class="counter__current">1</span>/<span class="counter__all">26</span></div>
-                    <div class="controls controls--comments"><a href="#" class="controls__left">Назад</a><a href="#" class="controls__right">Вперед</a></div>
+                    <div class="controls controls--bottom">
+                        <a href="#" class="controls__point controls__point--active"></a>
+                        <a href="#" class="controls__point"></a>
+                        <a href="#" class="controls__point"></a>
+                        <a href="#" class="controls__point"></a>
+                        <a href="#" class="controls__point"></a>
+                        <a href="#" class="controls__point controls__point--last"></a>
+                    </div>
+                    <div class="controls controls--comments controls--sides"><a href="#" class="controls__side controls__side--left">Назад</a><a href="#" class="controls__side controls__side--right">Вперед</a></div>
                 </div>
             </div>
         </section>
@@ -164,35 +177,35 @@
             <div class="container">
                 <h2 class="section-title about-us__title">О нас</h2>
                 <p class="handwriting-subtitle about-us__subtitle">О кондитере</p>
-                     <div class="about-us__column about-us__column--1">
-                     <div class="about-us__avatar">
-                        	<picture>
-                        		<source srcset="img/chef-avatar-desktop.png" media="(min-width: 1240px)">
-                        		<source srcset="img/chef-avatar-tab.png" media="(min-width: 768px)">
-														<source srcset="img/chef-avatar-mob.png">
-                        		<img src="img/chef-avatar-mob.png" alt="шеф" class="about-us__img">
-                        	</picture>
-                        </div>
+                <div class="about-us__column about-us__column--1">
+                    <div class="about-us__avatar">
+                        <picture>
+                            <source srcset="img/chef-avatar-desktop.png" media="(min-width: 1240px)">
+                            <source srcset="img/chef-avatar-tab.png" media="(min-width: 768px)">
+                            <source srcset="img/chef-avatar-mob.png">
+                            <img src="img/chef-avatar-mob.png" alt="шеф" class="about-us__img">
+                        </picture>
                     </div>
-                    <div class="about-us__column">
-                        <h4 class="about-us__chapter">Кондитер - это призвание</h4>
-                        <p class="about-us__info">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>
-                         С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер</p>
-                        <h4 class="about-us__chapter">Принцип - натуральные ингредиенты</h4>
-                        <p class="about-us__info">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов</p>
                 </div>
-                  <div class="social social--chef">
-                            <a href="#" class="social__btn social__btn--ins"></a><a href="#" class="social__btn social__btn--vk"></a><a href="#" class="social__btn social__btn--tw"></a>
-                        </div>
+                <div class="about-us__column">
+                    <h4 class="about-us__chapter">Кондитер - это призвание</h4>
+                    <p class="about-us__info">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.
+                        <br> С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер</p>
+                    <h4 class="about-us__chapter">Принцип - натуральные ингредиенты</h4>
+                    <p class="about-us__info">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов</p>
+                </div>
+                <div class="social social--chef">
+                    <a href="#" class="social__btn social__btn--ins"></a><a href="#" class="social__btn social__btn--vk"></a><a href="#" class="social__btn social__btn--tw"></a>
+                </div>
                 <blockquote class="chef-quote">
                     <p class="chef-quote__text">Я за простые рецепты. В Италии это называется cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
                     <div class="chef-quote__sign">
-                    	<picture>
-														<source srcset="img/signature-icon-desktop.png" media="(min-width: 1240px)">
-															<source srcset="img/signature-icon-tablet.png" media="(min-width: 768px)">
-														<source srcset="img/signature-icon.png">
-                    	<img src="img/signature-icon.png" alt="sign">
-                    </picture>
+                        <picture>
+                            <source srcset="img/signature-icon-desktop.png" media="(min-width: 1240px)">
+                            <source srcset="img/signature-icon-tablet.png" media="(min-width: 768px)">
+                            <source srcset="img/signature-icon.png">
+                            <img src="img/signature-icon.png" alt="sign">
+                        </picture>
                     </div>
                 </blockquote>
             </div>
@@ -201,8 +214,8 @@
             <div class="container">
                 <h2 class="section-title features-sec__title">Наши преимущества</h2>
                 <p class="handwriting-subtitle features-sec__subtitle">Почему нас выбирают?</p>
-              </div>
-              <div class="features-sec__wrap">
+            </div>
+            <div class="features-sec__wrap">
                 <ul class="features-list features-list--column container">
                     <li class="features-list__item features-list__item--max features-list__item--natural">
                         <h3 class="features-list__heading">Без искусственных добавок</h3>
@@ -213,16 +226,16 @@
                         <p class="features-list__desc features-list__desc--max">Торты изготавливаются в течение суток до отправки</p>
                     </li>
                 </ul>
-                </div>
+            </div>
             <section class="care-about">
-            <div class="container">
-            	<div class="care-about__wrap">
-                <h2 class="section-title care-about__title">Забота о клиентах</h2>
-                <p class="handwriting-subtitle care-about__subtitle">Для нас важна</p>
-                <p class="care-about__content">Нам важно, чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
-            </div>
-            </div>
-        </section>
+                <div class="container">
+                    <div class="care-about__wrap">
+                        <h2 class="section-title care-about__title">Забота о клиентах</h2>
+                        <p class="handwriting-subtitle care-about__subtitle">Для нас важна</p>
+                        <p class="care-about__content">Нам важно, чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+                    </div>
+                </div>
+            </section>
         </section>
         <section class="how-to">
             <div class="container">
