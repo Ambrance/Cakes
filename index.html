@@ -99,9 +99,11 @@
         </section>
         <section class="personal-order">
             <div class="container">
-                <h2 class="section-title">Индивидуальный заказ</h2>
-                <p class="handwriting-subtitle">Соберите торт в 3 шага</p>
-                <div class="order-steps">
+                <h2 class="personal-order__title section-title">Индивидуальный заказ</h2>
+                <p class="handwriting-subtitle personal-order__subtitle">Соберите торт в 3 шага</p>
+              </div>
+                <div class="personal-order__steps">
+                	<div class="container">
                     <div class="order-step">
                         <h4 class="order-step__heading">
 				<span class="order-step__num">01</span>
@@ -124,22 +126,24 @@
                         <div class="choose-panel"></div>
                     </div>
                 </div>
-                <h3 class="section-title">Ваш выбор</h3>
-                <form action="" class="order-form">
+                <div class="personal-order__result container">
+                <h3 class="section-title personal-order__title personal-order__title--v2">Ваш выбор</h3>
+                <form action="#" class="order-form">
                     <div class="order-form-item">
-                        <label for="" class="order-form-item__label">Начинка</label>
-                        <input type="text" class="order-form-item__choose">
+                        <label for="topping" class="order-form-item__label">Начинка</label>
+                        <input type="text" class="order-form-item__choose" id="topping" name="cake-topping" disabled value="Шоколадный ганаш">
+                    </div>
+                    <div class="order-form-item order-form-item--half-width">
+                        <label for="size" class="order-form-item__label">Размер</label>
+                        <input type="text" class="order-form-item__choose order-form-item__choose--half-width" id="size" name="cake-size" disabled value="2x">
                     </div>
                     <div class="order-form-item">
-                        <label for="" class="order-form-item__label">Размер</label>
-                        <input type="text" class="order-form-item__choose">
-                    </div>
-                    <div class="order-form-item">
-                        <label for="" class="order-form-item__label">Оформление</label>
-                        <input type="text" class="order-form-item__choose">
+                        <label for="decor" class="order-form-item__label">Оформление</label>
+                        <input type="text" class="order-form-item__choose" id="decor" name="cake-decor" disabled value="Маршмэллоу">
                     </div>
                     <button type="submit" class="btn order-form__btn">Заказать торт</button>
                 </form>
+                </div>
             </div>
         </section>
         <section class="comments">
