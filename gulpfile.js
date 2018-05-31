@@ -17,6 +17,11 @@ var gulp = require('gulp'),
     return gulp.src('sass/*.scss')
     .pipe(plumber())
     .pipe(sass())
+.pipe(postcss([
+      autoprefixer({browsers: [
+        "last 2 versions"
+      ]})
+    ]))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
